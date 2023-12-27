@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Appointment Scheduler</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Project.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Style1.css"/>
+</head>
+<body>
+@* <div class="header">
+    <h1>ASP.NET Core Doctor Appointment Scheduling Tutorial (.NET 6)</h1>
+    <div><a href="https://javascript.daypilot.org/">DayPilot for JavaScript</a> - HTML5 Calendar/Scheduling Components for JavaScript/Angular/React/Vue</div>
+</div> *@
+
+@* <nav>
+    <a href="./Index">Home</a>
+</nav> *@
+
+<div class="main">
+    @RenderBody()
+</div>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
